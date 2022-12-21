@@ -1,0 +1,20 @@
+<head>
+    <script>
+        function trap(){
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("pass").value;
+            var res = "メールアドレス" + email
+            res = res + "<br>パスワード:" + pass;
+            document.getElementById("trap").innerHTML = res;            
+        }
+    </script>
+</head>
+<div id="trap">
+    <div class="design">
+        <table align="center">
+            <tr><td align="rigth">メールアドレス</td><td><input type="email" name="email" required></td></tr>
+            <tr><td align="rigth">パスワード</td><td><input type="password" name="passwd" required></td></tr>
+            <tr><td align="rigth" colspan="2"><input type="button" value="認証" onclick="trap();"></td></tr>
+        </table>
+    </div>
+</div>

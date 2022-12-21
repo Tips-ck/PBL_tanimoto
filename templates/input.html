@@ -1,0 +1,12 @@
+<table align="center">
+    <form method="POST" action="input">
+        テスト結果を入力してください<br>
+        国語:<input type="num" name="lang"><br>
+        数学:<input type="num" name="math"><br>
+        英語:<input type="num" name="engl"><br>
+        <input type="hidden" name="home" value="{{ token| safe }}">
+        <input type="submit" value="送信">
+        <a href="home">戻る</a>
+
+    </form>
+</table>

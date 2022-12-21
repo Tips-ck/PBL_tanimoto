@@ -1,0 +1,10 @@
+{{ admin|safe }}<br>
+<a href="input">結果を入力<br></a>
+<a href="browse">結果を閲覧<br> </a>
+<a href="login">ログイン画面へ</a>
+<table align="center">
+    <tr><td>ユーザー情報</td></tr>
+    <tr><td>名前</td><td>{{ name|safe }}</td></tr>
+    <tr><td>メールアドレス</td><td>{{ email|safe }}</td></tr>
+    <tr><td>電話番号</td><td>{{ tel|safe }}</td></tr>
+</table>
